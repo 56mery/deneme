@@ -33,3 +33,4 @@ int main() {
 }
 
 //abi yaptım :") (şimdi de pull yapıcam )
+//yaappptttııımmm şükür 
