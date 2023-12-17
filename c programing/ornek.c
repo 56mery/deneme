@@ -307,4 +307,5 @@ int array[5] = {1,2,3,0,0} , toplam;
     printf("toplam %d" ,toplam);
 }       
 
-// herhangi bi değişikilk githubdan yapıyorum
+// herhangi bi değişikilk githubdan 
+// yeni bir değişiklik yapıyorum
