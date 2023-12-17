@@ -31,3 +31,5 @@ int main() {
 
     return 0;
 }
+
+//abi yaptım :") (şimdi de pull yapıcam )
