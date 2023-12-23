@@ -1,5 +1,5 @@
 
-//strinkler
+//stringler
 int main()
 {
    char nick[10];
@@ -102,3 +102,21 @@ int main()
     return 0;
 }
 
+
+
+int main() {
+   char name[]="Jeon Jungkook";
+   printf("%c %x\n" ,*name ,&name);
+  printf("%c" ,*(name+1));
+   printf("%c" ,*(name+2));
+    printf("%c" ,*(name+3));
+   
+   char *namekook;
+   namekook = name;
+   printf("%c" ,*(name+9));
+    printf("%c" ,*(name+10));
+     printf("%c" ,*(name+11));
+      printf("%c" ,*(name+12));
+    
+    return 0;
+}
