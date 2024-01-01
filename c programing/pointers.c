@@ -149,3 +149,48 @@ int main() {
     
     return 0;
 }
+
+//swap
+int main() {
+    
+    int temp,s1,s2;
+    int *p, *p2;
+    
+    printf("bir sayi giriniz:");
+   scanf("%d" ,&s1);
+     printf("bir sayi giriniz:");
+   scanf("%d" ,&s2);
+    
+    p=&s1;
+    p2=&s2;
+    
+   temp=*p;
+   *p=*p2;
+   *p2=temp;
+    
+    
+    printf(" %d %d" ,s1,s2);
+    
+    return 0;
+}
+  
+
+///  //////
+
+int main() {
+    
+    char sesli[5]={'a','e','i','o','\0'};
+    char str[30];
+    
+    printf("bir string giriniz");
+    gets(str);
+    
+    for(int i=0; str[i]!='\0'; i++){
+        if(str[i]==sesli[i]){
+            printf("%c\n sesli" ,str[i]);
+        }
+        else printf("%c\n sessiz" ,str[i]);
+    }
+    
+    return 0;
+}
