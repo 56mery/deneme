@@ -73,9 +73,7 @@ int main(void)
     return 0;
 }
 
-
-
-/* ornek 3 
+/* ornek 3
 struct ogr
 {
     char ad[20];
@@ -160,3 +158,61 @@ int main()
 }
 
 */
+
+// quiz sorusu
+struct ogrenci
+{
+    int sinavNotu;
+    char ad[20];
+    char soyad[20];
+};
+
+void ogrencileriGir(struct ogrenci ogr[5])
+{
+    int i;
+    for (i = 0; i < 5; i++)
+    {
+        printf("ogrencinin notunu giriniz:");
+        scanf("%d", &ogr[i].sinavNotu);
+        printf("ogrencinin adini giriniz:");
+        scanf("%s", ogr[i].ad);
+        printf("ogrencinin soyadini giriniz:");
+        scanf("%s", ogr[i].soyad);
+    }
+}
+
+void ogrencileriListele(struct ogrenci ogr[5])
+{
+    int i;
+    for (i = 0; i < 5; i++)
+    {
+        printf("ogrencinin notu: %d\n", ogr[i].sinavNotu);
+        printf("ogrencinin adi: %s\n", ogr[i].ad);
+        printf("ogrencinin soyadi: %s\n", ogr[i].soyad);
+    }
+}
+
+void minimumNot(struct ogrenci ogr[5])
+{
+    int i = 0, min;
+    min = ogr[i].sinavNotu;
+    for (i = 0; i < 5; i++)
+    {
+        if (ogr[i].sinavNotu < min)
+        {
+            min = ogr[i].sinavNotu;
+        }
+    }
+    printf("en düsük sinav notu %d", min);
+}
+
+int main()
+{
+    struct ogrenci ogr[5];
+
+    ogrencileriGir(ogr);
+    ogrencileriListele(ogr);
+    minimumNot(ogr);
+
+    return 0;
+}
