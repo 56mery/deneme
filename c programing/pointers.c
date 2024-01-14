@@ -15,6 +15,22 @@ int main() {
 }
 
 
+//
+int main() {
+   int dizi[3]={1,1,1};
+   int *p;
+   p=&dizi[0];
+   int toplam=0,i;
+   
+   for(int i=0; i<3; i++){
+       toplam+=*(p+i);
+   }
+   
+   printf("toplam %d" ,toplam);
+  
+    return 0;
+}
+
 
 //girilen değerleri topluyor
 int main() {
@@ -179,18 +195,23 @@ int main() {
 
 int main() {
     
-    char sesli[5]={'a','e','i','o','\0'};
+    char sesli[5]= {'a','e','i','o','\0'};
     char str[30];
     
-    printf("bir string giriniz");
+    int sayac=0;
+    
+    printf("bir string giriniz: ");
     gets(str);
     
     for(int i=0; str[i]!='\0'; i++){
-        if(str[i]==sesli[i]){
-            printf("%c\n sesli" ,str[i]);
+        for(int j=0; sesli[j]!='\0'; j++){
+        if(str[i]==sesli[j]){
+            sayac++;
         }
-        else printf("%c\n sessiz" ,str[i]);
+        }
     }
+    
+    printf("sesli harf sayisi %d" ,sayac);
     
     return 0;
 }
