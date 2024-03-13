@@ -4,11 +4,11 @@ int main()
 {
    char nick[10];
    int d;
-   printf("dizinin uzunlugunu giriniz:");
+   printf("nickinizin uzunlugunu giriniz:");
    scanf("%d" ,&d);
    while(1){
        if(d>10){
-       printf("dizi için boyut çok uzun. lütfen tekrar bir boyut giriniz:");
+       printf(" boyut çok uzun. lütfen tekrar bir boyut giriniz:");
        scanf("%d" ,&d);
        }
        else break;
@@ -103,7 +103,7 @@ int main()
 }
 
 
-
+/// ///  
 int main() {
    char name[]="Jeon Jungkook";
    printf("%c %x\n" ,*name ,&name);
@@ -195,7 +195,7 @@ int main() {
 #define MAX_SİZE 100
 
 char compare(char *x, char *y){
-    int i;
+    int i=0;
   
        while(x[i]==y[i]){
            if(x[i]=='\0' && y[i]=='\0')

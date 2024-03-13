@@ -235,14 +235,37 @@ int main() {
    printf("bir kelime/cümle giriniz:");
    gets(str2);
   
-   //nie hata veriyo bilmiom ama doğru esit=mystrcat(str1 , str2);
+// esit = mystrcat(str1 , str2);
   
  if(esit!=0) printf("kelimeler/cümleler eşit");
  else printf("cümleler/kelimeler farkli");
+ 
+ printf("iki kelimenin %d tanesi ayni" ,esit);
    
     return 0;
 }
 
 
 
-//strncmp
+//strnlen
+int main(){
+    int i,sayac=0,n;
+    char str[10];
+    
+    printf("bir kelime girirniz:");
+    gets(str); //scanf("%s" ,str);
+    
+    for(i=0; str[i]!='\0'; i++){
+        sayac++;
+    }
+    
+    printf("bir uzunluk giriniz:");
+    scanf("%d" ,&n);
+    
+    if(n<sayac)
+    printf("%d" ,n);
+    else
+    printf("%d" ,sayac);
+ 
+    return 0;
+}

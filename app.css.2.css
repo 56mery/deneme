@@ -1,0 +1,120 @@
+th,
+td,
+tr {
+    border: 2px solid black;
+    border-collapse: collapse;
+    border-style: inset;
+    border-radius: 10%;
+}
+
+#customers {
+    background-color: rgb(209, 205, 205);
+    color: rgb(11, 11, 12);
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: yellow;
+}
+
+#customers th{
+    background-color: rgb(141, 68, 68);
+    color: white;
+}
+
+.hero {
+    background-image: url"video/Heros/bc16e2ec555c056ae5506e225ab9bb0c.jpg";
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #f2f2f2;
+    style:"display: inline-block;"
+}
+
+.hero img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    text-align: right;
+}
+
+.foti {
+    display: flex;
+    align-items: center;
+}
+
+.table {
+    margin-right: 50px;
+    border: 1px black;
+    border-radius: 20%;
+    border:"70px"
+    style="display: inline-block;"
+}
+
+.nwh {
+    width: 1100px;
+    height: 300px;
+    overflow: auto;
+    margin-right: 20px;
+    color: #f2f2f2;
+    style:"display: inline-block;"
+}
+
+
+.nwh :first-child {
+    color: rgb(143, 3, 3);
+}
+
+.nwh :nth-child(3) {
+    color: rgb(170, 48, 3);
+}
+
+.container {
+    display: grid;
+    align-items: left;
+    grid-template-columns: auto 1fr;
+    style:"display: inline-block;"
+}
+
+.text{
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    color: #f2f2f2;
+}
+
+.img{
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    width: 900px;
+    height: 500px;
+
+}
+
+ul{
+    list-style-type: none;
+    width: 10%; 
+}
+
+ul li{
+    padding:1%;
+    background-color:#585b5d;
+    margin-left: 2%;
+}
+
+ul li:hover{
+    background-color: #0a559f;
+    transition: 0.7s;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+i{
+    padding: 3%;
+}
