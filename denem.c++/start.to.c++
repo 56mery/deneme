@@ -140,7 +140,7 @@ int kareal(int x1, int x2){
 using namespace std;
 
 int toplam(int x){
-    if(x<=100){
+    if(x<100){
         if(x%2==0){
             return x + toplam(x+1);
         }
