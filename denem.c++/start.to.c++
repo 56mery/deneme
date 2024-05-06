@@ -140,7 +140,7 @@ int kareal(int x1, int x2){
 using namespace std;
 
 int toplam(int x){
-    if(x<100){
+    if(x<=100){
         if(x%2==0){
             return x + toplam(x+1);
         }
@@ -153,6 +153,81 @@ int main() {
     int sonuc=0;
     sonuc= toplam(i);
     cout<<"1-100 arasi cift sayilarin toplami: "<<sonuc<<endl;
+
+    return 0;
+}
+
+
+
+///cok değerli senior abim ilk olarak yine int main yazdığım için üzgünüm ama devami gelicek söz. ikinci olarak terminalden git push falan onların hepsini yaptım
+//ama olmadı ben de buraları biraz kurcaladım farklı bir yolla dosyayı yukledim farkı ne acaba eksikleri ne merak ediyorum ama saat geç o yuzde yarin sorcam
+//son olarak teşekkürlerrrr 
+
+
+#include <iostream>
+using namespace std;
+
+int ciftp(int x){
+    if(x<100){
+        if(x%2==0){
+            return x + ciftp(x+1);
+        }
+        else ciftp(x+1);
+    }
+}
+
+int tp(int x){
+    if(x<100){
+       return x+ tp(x+1);
+    }
+}
+
+int main() {
+    int i=1;
+    int sonuc=0;
+    sonuc=ciftp(i);
+    cout<<"1-100 arasi cift sayilarin toplami: "<<sonuc<<endl;
+    cout<<"1-100 arasi tek sayilarin toplami: "<<(tp(i)-sonuc)<<endl;
+    return 0;
+}
+
+
+
+/// protatip
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    char islem;
+    long double sonuc = 0, x, y, d = 1, z, isinizbittimi = 1;
+    cout << "\t\t\t\t\t~~Hesap Makinesi~~" << endl;
+
+    cout << "yaptirmak istediginiz islemleri giriniz: ";
+    cin >> x;
+    cin >> islem;
+    cin >> y;
+
+    if (islem == '+')
+    {
+        sonuc = (x + y);
+        cout << "sonuc: " << sonuc << endl;
+    }
+    if (islem == '-')
+    {
+        sonuc = (x - y);
+        cout << "sonuc: " << sonuc << endl;
+    }
+    if (islem == '*')
+    {
+        sonuc = (x * y);
+        cout << "sonuc: " << sonuc << endl;
+    }
+    if (islem == '/')
+    {
+        sonuc = (x / y);
+        cout << "sonuc: " << sonuc << endl;
+    }
 
     return 0;
 }
